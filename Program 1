@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+class Main
+{
+  public static void main(String[] args)
+  {
+    int[] arrOne = new int[5];
+    int[] arrTwo = new int[5];
+    int i, j;
+    Scanner s1 = new Scanner(System.in);
+    
+    System.out.println("Choose 5 integers for the first array:")
+    for(i=0; i<5; i++)
+      arrOne[i] = s1.nextInt();
+    System.out.println("\nChoose 5 integers for the second array:");
+    for(i=0; i<5; i++)
+        arrTwo[i] = s1.nextInt();
+   
+   System.out.println("\nThe common integers between the two arrays are:")
+   for(i=0; i<5; i++)
+   {
+      for(j=0; j<5; j++)
+      {
+         if(arrOne[i]==arrTwo[j])
+            System.out.print(arrOne[i]+ " ")'
+         }
+      }
+   }
+}
