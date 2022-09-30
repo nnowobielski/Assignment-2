@@ -1,0 +1,53 @@
+public class Main
+{
+
+
+  static void reverse_array (char character_array[], int n)
+  {
+
+    char[] reversed_array = new char[n];
+
+    int index_number = n;
+
+    for (int i = 0; i < n; i++)
+      {
+
+	reversed_array[index_number - 1] = character_array[i];
+
+	index_number = index_number - 1;
+
+      }
+
+
+
+
+
+    System.out.println ("Reversed characters: ");
+
+    for (int k = 0; k < n; k++)
+      {
+
+	System.out.print (reversed_array[k] + " ");
+
+      }
+  }
+
+  public static void main (String[]args)
+  {
+
+    char[] character_array = { 'N', 'A', 'T', 'H', 'A', 'N' };
+
+    System.out.println ("Original characters: ");
+
+    for (int k = 0; k < character_array.length; k++)
+      {
+
+	System.out.print (character_array[k] + " ");
+
+      }
+    System.out.println ();
+
+    reverse_array (character_array, character_array.length);
+
+  }
+}
