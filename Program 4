@@ -1,0 +1,47 @@
+import java.util.*;
+
+ 
+class Main
+{
+  
+  
+boolean uniqueCharacters (String str) 
+  {
+    
+ 
+for (int i = 0; i < str.length (); i++)
+      
+for (int j = i + 1; j < str.length (); j++)
+	
+if (str.charAt (i) == str.charAt (j))
+	  
+return false;
+    
+ 
+ 
+return true;
+  
+}
+  
+ 
+public static void main (String args[]) 
+  {
+    
+Main obj = new Main ();
+    
+String input = "Roosevelt";
+    
+ 
+if (obj.uniqueCharacters (input))
+      
+System.out.println ("Your input, " + input +
+			   " ,contains only unique characters");
+    
+    else
+      
+System.out.println ("Your input " + input +
+			   " ,contains repeated characters");
+  
+}
+
+}
