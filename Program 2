@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+class Main
+{
+
+  public static void main (String[]args)
+  {
+    int[] num = { 65, 60, 77, 87, 90 };
+    int toFind = 65;
+    int toFind2 = 77;
+    boolean Key1 = false;
+    boolean Key2 = false;
+    boolean access = false;
+
+    for (int n:num)
+      {
+        if (n == toFind)
+            Key1 = true;
+        if (n == toFind2)
+            Key2 = true;
+        if ((Key1 == true) && (Key2 == true))
+        access = true;
+      }
+    if (access == true)
+      System.out.println ("Both 65 and 77 are found.");
+    else
+      System.out.println ("Either 65 or 77 is not found.");
+  }
+}
